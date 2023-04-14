@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpAcitivity"
+    android:background="@drawable/layoutgradient"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/newName_id"
+        android:inputType="textPersonName"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedcorner"
+        android:hint="Fullname"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#90ffffff"
+        android:textSize="16sp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/newEmail_id"
+        android:layout_marginTop="15dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedcorner"
+        android:hint="Email"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#90ffffff"
+        android:textSize="16sp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="textPassword"
+        android:id="@+id/newPass_id"
+        android:layout_marginTop="15dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedcorner"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#90ffffff"
+        android:textSize="16sp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="textPassword"
+        android:id="@+id/confirmPass_id"
+        android:layout_marginTop="15dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundedcorner"
+        android:hint="Confirm Password"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#90ffffff"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton_id"
+        android:layout_marginTop="15dp"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/roundedcorner"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:paddingTop = "30dp"
+            android:layout_marginStart="120dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textColor="#90ffffff"/>
+        <TextView
+            android:id="@+id/signInText_id"
+            android:paddingTop = "30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textStyle="bold"
+            android:textColor="#Fff"/>
+
+    </LinearLayout>
+</LinearLayout>
